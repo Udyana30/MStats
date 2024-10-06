@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MStats</string>
+    <string name="rm">Real Madrid</string>
+    <string name="stats">Player stats for 2025 season.</string>
+    <string name="menu_bar">menu bar</string>
+    <string name="filter">Filter</string>
+    <string name="profile_player">Player</string>
+    <string name="flag">flag</string>
+    <string name="ovr">OVR</string>
+    <string name="ovr1">Overall FIFA Rate</string>
+    <string name="foot">Preferred Foot:</string>
+    <string name="age">Age:</string>
+    <string name="height">Height:</string>
+    <string name="weight">Weight:</string>
+    <string name="contract">Contract until</string>
+    <string name="share">Share</string>
+    <string name="back">Back</string>
+    <string name="player_rating">Player Ratings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="profile">profile</string>
+    <string name="name">Joni Ananta</string>
+    <string name="email">joniananta30@gmail.com</string>
+    <string name="phone">+6281234987456</string>
+    <string name="about">About</string>
+    <string name="about_me">I have extensive experience in various organizations within the university that have helped me develop leadership and collaboration skills. During my studies, I have acquired technical skills in visual design, Internet of Things, database, and website and mobile application development. In addition, I also have creative skills in photography and videography, which is not only a hobby but also a source of income.</string>
+    <string name="univ">Undergraduate Information Technology\nat Udayana University</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="skill">Skills</string>
+    <string name="hala">¡Hala Madrid!</string>
+    <string name="skill_me">Hard Skills: Java, Kotlin, C, C++, Python, HTML, CSS, JavaScript, ReactJS, MySQL, NoSQL.\n\nSoft Skills: Effective Communication, Teamwork, Time Management, Adaptability, Networking, Positive Attitude, Project Management, Digital Skills, Critical Thinking and Problem Solving.</string>
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AboutAct"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/desk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/profile"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_back"
+            app:layout_constraintEnd_toStartOf="@+id/my_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/my_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/my_profile"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/profile"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_profile"/>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile"/>
+
+        <TextView
+            android:id="@+id/university"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/univ"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_name"
+            tools:ignore="TextContrastCheck" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/university">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/email"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="11sp"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="8dp"
+                app:drawableStartCompat="@drawable/ic_email"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/phone"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_marginStart="20dp"
+                android:textSize="11sp"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="2dp"
+                app:drawableStartCompat="@drawable/ic_phone"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear1"/>
+
+        <TextView
+            android:id="@+id/about_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_me"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:justificationMode="inter_word"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about"
+            tools:ignore="UnusedAttribute,VisualLintLongText"/>
+
+
+        <TextView
+            android:id="@+id/portfolio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/portfolio"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_me"/>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/portfolio_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/port_1"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/port_1"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/portfolio"/>
+
+                <ImageView
+                    android:id="@+id/port_2"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/port_2"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/portfolio"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/port_3"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/port_3"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/portfolio"/>
+
+                <ImageView
+                    android:id="@+id/port_4"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/port_4"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/portfolio"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/skill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skill"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear2"/>
+
+        <TextView
+            android:id="@+id/skill_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/skill_me"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:justificationMode="inter_word"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skill_title"
+            tools:ignore="UnusedAttribute,VisualLintLongText"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
